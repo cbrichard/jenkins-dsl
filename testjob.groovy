@@ -5,5 +5,6 @@ job('test build') {
     }
     steps {
         shell('echo Hello Builder')
+        shell('cat test.txt')
     }
 }
