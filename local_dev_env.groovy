@@ -7,6 +7,6 @@ job('Build Dev Env') {
         shell('echo Testing Vagrantfile')
         shell('vagrant validate')
         shell('echo Running Vagrant to build Dev Environment')
-        shell('vagrant up')
+        shell('vagrant destroy')
     }
 }
