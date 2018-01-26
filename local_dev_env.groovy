@@ -7,7 +7,7 @@ job('Build Dev Env') {
         shell('echo Testing Vagrantfile')
         shell('vagrant validate')
         shell('echo Running Vagrant to build Dev Environment')
-        shell('export VAGRANT_DETECTED_OS="$(uname)"'
+        shell("export VAGRANT_DETECTED_OS=$(uname)")
         shell('vagrant up')
     }
 }
